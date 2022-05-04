@@ -8,7 +8,7 @@ public class EpuzzleState extends SearchState {
   public EpuzzleState(int[][] pg) {
 
     puzzleGrid = pg;
-    estRemCost = manhattanDistance();
+    estRemCost = hammingDistance();
     localCost = 1;
   }
 

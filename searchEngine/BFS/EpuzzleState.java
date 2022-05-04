@@ -93,6 +93,7 @@ public class EpuzzleState extends SearchState {
         puzzleRight[i][j] = puzzleGrid[i][j];
       }
     }
+    
     //creating 4 new puzzle layouts witht he zero swapped with the surrounding tiles
     if (x > 0){
       puzzleTop[y][x] = valueLeft;

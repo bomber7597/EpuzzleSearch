@@ -21,12 +21,13 @@ public abstract class Search {
 
 	/**
 	 * run a search
-	 *
+	 * 
 	 * @param initState initial state
 	 * @param strat     - String specifying strategy
 	 * @return indication of success or failure
 	 */
 	public String runSearch(SearchState initState, String strategy) {
+
 		initNode = new SearchNode(initState); // create initial node
 
 		System.out.println("Starting " + strategy + " Search"); // change from search1 - print strategy
@@ -39,8 +40,6 @@ public abstract class Search {
 		int iterationCount = 1; // counts the iterations
 
 		while (!open.isEmpty()) {
-
-			// if (iterationCount > 10) return "suk ya mam";
 
 			// print contents of open
 			System.out.println("iteration no " + iterationCount);
